@@ -1,8 +1,6 @@
 import { CodeIcon } from "@heroicons/react/solid";
 import React from "react";
 import { projects } from "../data";
-import extensãozap from "./extensãozap.jpg"
-import relogiodigital from "./relogiodigital.png"
 
 export default function Projects() {
   return (
