@@ -1,5 +1,7 @@
 import { ArrowRightIcon } from "@heroicons/react/solid";
 import React from "react";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+
 
 export default function Navbar() {
   return (
@@ -11,22 +13,39 @@ export default function Navbar() {
           </a>
         </a>
         <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
-          <a href="#projects" className="mr-5 text-sky-600  hover:text-white">
-            Projetos
-          </a>
-          <a href="#skills" className="mr-5 text-sky-600 hover:text-white">
-            Habilidades
-          </a>
-          <a href="#testimonials" className="mr-5 text-sky-600  hover:text-white">
-            BláBlá
-          </a>
+        <ScrollLink
+          to="projects"
+          smooth={true}
+          duration={700}
+          className="mr-5 text-sky-600  hover:text-white"
+        >
+        Projetos
+        </ScrollLink>
+        <ScrollLink
+          to="skills"
+          smooth={true}
+          duration={700}
+          className="mr-5 text-sky-600  hover:text-white"
+        >
+        Habilidades
+        </ScrollLink>
+        <ScrollLink
+          to="Cursos"
+          smooth={true}
+          duration={700}
+          className="mr-5 text-sky-600  hover:text-white"
+        >
+        Cursos
+        </ScrollLink>
         </nav>
-        <a
-          href="#contact"
-          className="inline-flex text-white items-center bg-sky-600 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
-          Fale Comigo
-          <ArrowRightIcon className="w-4 h-4 ml-1" />
-        </a>
+        <ScrollLink
+          to="contact"
+          smooth={true}
+          duration={1000}
+          className="inline-flex text-white items-center bg-sky-600 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0"
+        >
+        Fale Comigo <ArrowRightIcon className="w-4 h-4 ml-1" />
+        </ScrollLink>
       </div>
     </header>
   );

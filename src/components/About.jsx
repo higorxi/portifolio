@@ -1,5 +1,6 @@
 import React from "react";
 import minhaImagem from "./logo01ahg.png";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 export default function About() {
   return (
@@ -14,16 +15,22 @@ export default function About() {
             Meu nome é Higor Giovane, sou um estudante de Engenharia de Software na UniEvangélica, atualmente minha área de estudo se concentra no Front-End, mas tenho o conhecimento diversos das áreas de tecnologia
           </p>
           <div className="flex justify-center">
-            <a
-              href="#contact"
-              className="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-700 rounded text-lg">
-              Contate-me
-            </a>
-            <a
-              href="#projects"
-              className="ml-4 inline-flex text-white bg-gray-500 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
-              Veja alguns projetos
-            </a>
+          <ScrollLink
+            to="contact"
+            smooth={true}
+            duration={700}
+            className="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-700 rounded text-lg"
+            >
+            Contate-me
+            </ScrollLink>
+            <ScrollLink
+            to="projects"
+            smooth={true}
+            duration={700}
+            className="ml-4 inline-flex text-white bg-gray-500 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg"
+            >
+            Veja alguns projetos
+            </ScrollLink>
           </div>
         </div>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
