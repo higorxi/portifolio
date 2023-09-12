@@ -11,10 +11,10 @@ export default function Footer(){
             </a>
             <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
                 <li>
-                    <a href="#" class="mr-4 hover:underline md:mr-6 ">Sobre me</a>
+                    <a href="about" class="mr-4 hover:underline md:mr-6 ">Sobre me</a>
                 </li>
                 <li>
-                    <a href="#" class="mr-4 hover:underline md:mr-6">Politica de Privacidade</a>
+                    <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" class="mr-4 hover:underline md:mr-6">Politica de Privacidade</a>
                 </li>
                 <li>
                     <a href="#contact" class="hover:underline">Contato</a>
