@@ -1,4 +1,3 @@
-import extensãozap from "./components/extensãozap.jpg";
 
 export const projects = [
     {
